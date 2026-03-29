@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo Santo — Senior Software Developer</title>
+  <meta name="description" content="Eduardo Santo — Senior Software Developer specializing in AI workflows, distributed systems, and cloud architecture. Based in Madrid, Spain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Eduardo Santo</a>
+      <ul class="nav__links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/CV-EHS.pdf" class="nav__cta" download>Download CV</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Senior Software Developer</p>
+          <h1 class="hero__name">Eduardo<br/>Santo</h1>
+          <p class="hero__tagline">
+            Building high-performance backend systems, distributed architectures, and AI-integrated platforms.
+            Currently at <span class="hero__company">Amazon · Ring</span>.
+          </p>
+          <div class="hero__meta">
+            <span class="hero__location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Madrid, Spain
+            </span>
+            <span class="hero__dot">·</span>
+            <span>Open to Senior &amp; Lead Roles</span>
+          </div>
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary">View Experience</a>
+            <a href="assets/CV-EHS.pdf" class="btn btn--ghost" download>Download CV</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__grid">
+            <div class="hero__grid-line"></div>
+            <div class="hero__grid-line"></div>
+            <div class="hero__grid-line"></div>
+            <div class="hero__grid-line"></div>
+          </div>
+          <div class="hero__card">
+            <div class="hero__card-header">
+              <span class="hero__card-dot hero__card-dot--red"></span>
+              <span class="hero__card-dot hero__card-dot--yellow"></span>
+              <span class="hero__card-dot hero__card-dot--green"></span>
+              <span class="hero__card-title">eduardo@ring:~</span>
+            </div>
+            <div class="hero__card-body">
+              <p><span class="c-green">$</span> whoami</p>
+              <p class="c-dim">Eduardo Santo</p>
+              <p><span class="c-green">$</span> cat specialties.txt</p>
+              <p class="c-dim">Golang · AWS · Microservices</p>
+              <p class="c-dim">AI Agents · Ruby on Rails · Java</p>
+              <p class="c-dim">IaC · Distributed Systems</p>
+              <p><span class="c-green">$</span> <span class="cursor">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats strip -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <span class="stats__number">8+</span>
+            <span class="stats__label">Years in Software Engineering</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">4+</span>
+            <span class="stats__label">AI Agents Created</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">10+</span>
+            <span class="stats__label">Projects Delivered</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Career</span>
+          <h2 class="section__title">Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Amazon Ring -->
+          <article class="timeline__item timeline__item--current">
+            <div class="timeline__marker">
+              <div class="timeline__dot timeline__dot--active"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <div class="timeline__info">
+                  <h3 class="timeline__role">Software Development Engineer</h3>
+                  <p class="timeline__company">Amazon · Ring Brand</p>
+                </div>
+                <div class="timeline__meta">
+                  <span class="timeline__period">Feb 2022 — Present</span>
+                  <span class="badge badge--current">Current</span>
+                </div>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Spearheaded Spec-Driven-Development, overseeing AI Agents for features and infrastructure, migration and refinement of core Ruby on Rails monolith</li>
+                <li>Engineered 5+ high-performance backend microservices in Golang and Java 21, including device emulation and MCP Server for AI Agent integration</li>
+                <li>Led zero-downtime connectivity migration ensuring 100% service availability for our Billing platform</li>
+                <li>Architected AWS CDK Infrastructure as Code, re-architecting backend services for scalability</li>
+                <li>Key on-call engineer leveraging AWS monitoring tools and Grafana dashboards</li>
+                <li>Elevated code review standards and mentored peers on AI best practices</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">Golang</span>
+                <span class="tag">Java 21</span>
+                <span class="tag">Ruby on Rails</span>
+                <span class="tag">AWS CDK</span>
+                <span class="tag">AI Agents</span>
+                <span class="tag">MCP Server</span>
+                <span class="tag">Grafana</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pretty Technical -->
+          <article class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <div class="timeline__info">
+                  <h3 class="timeline__role">Senior Technical Team Lead</h3>
+                  <p class="timeline__company">Pretty Technical</p>
+                </div>
+                <div class="timeline__meta">
+                  <span class="timeline__period">Apr 2021 — Feb 2022</span>
+                  <span class="timeline__duration">11 months</span>
+                </div>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Technical leadership across 3 concurrent projects: real-time sport events system, replicable betting games platform, and proprietary Online Betting Platform with third-party integrations</li>
+                <li>Built Golang backends with NATS.IO messaging, Redis caching, and React.JS frontends</li>
+                <li>Established CI/CD pipelines on GitLab, deploying to Azure</li>
+                <li>Hosted Golang Bootcamps and GIT workshops; enforced GitFlow and semantic versioning</li>
+                <li>Drove SCRUM ceremonies and technical client meetings</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">Golang</span>
+                <span class="tag">NATS.IO</span>
+                <span class="tag">Redis</span>
+                <span class="tag">React.JS</span>
+                <span class="tag">AWS</span>
+                <span class="tag">Azure</span>
+                <span class="tag">GitLab CI/CD</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Globant -->
+          <article class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <div class="timeline__info">
+                  <h3 class="timeline__role">IoT Engineer &amp; Software Developer</h3>
+                  <p class="timeline__company">Globant Argentina</p>
+                </div>
+                <div class="timeline__meta">
+                  <span class="timeline__period">Nov 2018 — Apr 2021</span>
+                  <span class="timeline__duration">2 yrs 6 mos</span>
+                </div>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Golang development with Gitlab CI/CD, Docker and Docker-compose for containerized workloads</li>
+                <li>Worked across MySQL, and Redis data layers</li>
+                <li>Leveraged AWS CloudWatch and Datadog for observability and debugging</li>
+                <li>Led 3-phase Golang Bootcamp; promoted GIT best practices, GitFlow, and semantic versioning</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">Golang</span>
+                <span class="tag">Docker</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Datadog</span>
+                <span class="tag">AWS CloudWatch</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Showcase</span>
+          <h2 class="section__title">Notable Work</h2>
+        </div>
+
+        <div class="projects__grid">
+
+          <article class="project-card project-card--featured">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">AI Infrastructure</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">MCP Server for AI Agent Integration</h3>
+              <p class="project-card__desc">
+                Designed and implemented a Model Context Protocol (MCP) Server enabling seamless AI Agent integration into Ring's backend infrastructure. Supports Spec-Driven-Development workflows and autonomous feature generation at scale.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">MCP</span>
+                <span class="tag">AI Agents</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">AI Engineering</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Specialized AI Agent Fleet</h3>
+              <p class="project-card__desc">
+                Designed and deployed 4+ purpose-built AI agents — including development agents, integration-test specialists, and review agents — each equipped with 6+ specialized skills. Human-in-the-loop communication was the top-priority skill across all agents, ensuring enhanced quality and oversight throughout automated workflows.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">AI Agents</span>
+                <span class="tag">MCP</span>
+                <span class="tag">Human-in-the-Loop</span>
+                <span class="tag">Spec-Driven Dev</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">Infrastructure</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Zero-Downtime Connectivity Migration</h3>
+              <p class="project-card__desc">
+                Led a critical infrastructure migration for our Billing platform's connectivity layer. Achieved 100% service availability throughout the transition — zero operations lost.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Ruby on Rails</span>
+                <span class="tag">AWS CDK</span>
+                <span class="tag">Terraform</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">Platform Engineering</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Online Betting Platform Backend</h3>
+              <p class="project-card__desc">
+                Architected a proprietary real-time betting platform backend at Pretty Technical — integrated third-party game providers, NATS.IO event streaming, Redis caching, and multi-cloud deployment pipelines.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Golang</span>
+                <span class="tag">NATS.IO</span>
+                <span class="tag">Redis</span>
+                <span class="tag">React.JS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">Billing Systems</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Subscription Billing Platform</h3>
+              <p class="project-card__desc">
+                Maintained and evolved the core Ruby on Rails monolith managing subscription lifecycle for Ring across 2+ business verticals and 4+ payment providers — serving millions of active subscribers.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Ruby on Rails</span>
+                <span class="tag">AWS</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Redis</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects__cta">
+          <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+            View GitHub Profile
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Expertise</span>
+          <h2 class="section__title">Skills &amp; Tech Stack</h2>
+        </div>
+
+        <div class="skills__layout">
+
+          <div class="skills__categories">
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Agentic AI</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span class="skill-item__name">MCP Server Development</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Spec-Driven Development</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">AI Agent Design &amp; Orchestration</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Human-in-the-Loop Workflows</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Prompt Engineering</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Programming Languages</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span class="skill-item__name">Golang</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Ruby on Rails</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Java 21</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">JavaScript / TypeScript</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">React.JS</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Python</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">C</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Cloud &amp; Architecture</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span class="skill-item__name">AWS CDK (IaC)</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Distributed Architecture Design</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">AWS CloudWatch</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Datadog</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Grafana</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Data &amp; Messaging</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span class="skill-item__name">NATS.IO</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Kafka</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Redis</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">MySQL</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">DynamoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">DevOps &amp; Testing</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span class="skill-item__name">Docker</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Kubernetes</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">GitLab CI/CD</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name"> Integration/ System / Unit Testing</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="skills__soft">
+            <h3 class="skill-group__title">Leadership &amp; Soft Skills</h3>
+            <div class="soft-skills">
+              <div class="soft-skill">
+                <div class="soft-skill__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div>
+                  <h4 class="soft-skill__title">Technical Leadership &amp; Mentoring</h4>
+                  <p class="soft-skill__desc">Led multiple engineering teams, hosted Golang bootcamps, and fostered best engineering practices.</p>
+                </div>
+              </div>
+              <div class="soft-skill">
+                <div class="soft-skill__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <div>
+                  <h4 class="soft-skill__title">Agile / SCRUM</h4>
+                  <p class="soft-skill__desc">Deep experience facilitating agile ceremonies, sprint planning, and cross-team collaboration.</p>
+                </div>
+              </div>
+              <div class="soft-skill">
+                <div class="soft-skill__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div>
+                  <h4 class="soft-skill__title">Communication &amp; Negotiation</h4>
+                  <p class="soft-skill__desc">Effective communication with client dev teams, stakeholders, and cross-functional partners.</p>
+                </div>
+              </div>
+              <div class="soft-skill">
+                <div class="soft-skill__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div>
+                  <h4 class="soft-skill__title">Project &amp; Process Management</h4>
+                  <p class="soft-skill__desc">Managed multiple concurrent technical projects, enforcing GitFlow, semantic versioning, and release processes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__languages">
+              <h3 class="skill-group__title" style="margin-top: 2.5rem">Languages</h3>
+              <div class="lang-list">
+                <div class="lang-item">
+                  <span class="lang-item__name">Spanish</span>
+                  <span class="lang-item__level lang-item__level--native">Native</span>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-item__name">English</span>
+                  <span class="lang-item__level lang-item__level--fluent">Fluent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__text">
+            <span class="section__label">Get in touch</span>
+            <h2 class="section__title">Let's Work Together</h2>
+            <p class="contact__desc">
+              Open to senior and lead engineering roles. Whether you're building a distributed system, scaling infrastructure, or integrating AI — I'd love to hear about your challenge.
+            </p>
+            <div class="contact__links">
+              <a href="mailto:eduardohoraciosanto@gmail.com" class="contact__link">
+                <span class="contact__link-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span>eduardohoraciosanto@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/eduardohoraciosanto/" target="_blank" rel="noopener noreferrer" class="contact__link">
+                <span class="contact__link-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </span>
+                <span>linkedin.com/in/eduardohoraciosanto</span>
+              </a>
+              <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" class="contact__link">
+                <span class="contact__link-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </span>
+                <span>github.com/eduardohoraciosanto</span>
+              </a>
+              <div class="contact__link contact__link--static">
+                <span class="contact__link-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>Madrid, Spain</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact__cv">
+            <div class="cv-card">
+              <div class="cv-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <h3 class="cv-card__title">Curriculum Vitae</h3>
+              <p class="cv-card__desc">More details available in my CV.</p>
+              <a href="assets/CV-EHS.pdf" class="btn btn--primary btn--block" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download CV (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          &copy; 2026 Eduardo Santo. All rights reserved.
+          <span class="footer__collab">Co-created with autonomous AI agents, guided by human expertise.</span>
+        </p>
+        <div class="footer__social">
+          <a href="https://github.com/eduardohoraciosanto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/eduardohoraciosanto/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:eduardohoraciosanto@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
