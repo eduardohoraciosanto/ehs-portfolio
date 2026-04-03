@@ -89,10 +89,13 @@
 
   if (!getConsent()) {
     banner.removeAttribute('hidden');
+  } else {
+    gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied' });
   }
 
   acceptBtn.addEventListener('click', () => {
     setConsent();
+    gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied' });
     banner.setAttribute('hidden', '');
   });
 
