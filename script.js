@@ -76,6 +76,26 @@
 
   sections.forEach(sec => sectionObserver.observe(sec));
 
+  // ---- Cookie consent banner ----
+  const banner = document.getElementById('cookieBanner');
+  const acceptBtn = document.getElementById('cookieAccept');
+
+  function getConsent() {
+    try { return localStorage.getItem('cookieConsent'); } catch (e) { console.warn('[cookie] localStorage.getItem failed:', e); return null; }
+  }
+  function setConsent() {
+    try { localStorage.setItem('cookieConsent', '1'); } catch (e) { console.warn('[cookie] localStorage.setItem failed:', e); }
+  }
+
+  if (!getConsent()) {
+    banner.removeAttribute('hidden');
+  }
+
+  acceptBtn.addEventListener('click', () => {
+    setConsent();
+    banner.setAttribute('hidden', '');
+  });
+
   // ---- Staggered reveal for grids ----
   const staggerParents = document.querySelectorAll('.projects__grid, .stats__grid, .skills__categories, .soft-skills');
 

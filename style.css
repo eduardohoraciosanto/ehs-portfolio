@@ -1046,3 +1046,53 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===================================================
+   COOKIE CONSENT BANNER
+   =================================================== */
+.cookie-banner {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0.75rem clamp(1.25rem, 5vw, 3rem);
+  background: var(--clr-surface);
+  border-top: 1px solid var(--clr-border);
+  box-shadow: 0 -2px 12px rgba(0,0,0,.06);
+  font-size: 0.8125rem;
+  color: var(--clr-text-2);
+  animation: slideUp 300ms ease forwards;
+}
+
+.cookie-banner[hidden] { display: none; }
+
+.cookie-banner__text { margin: 0; }
+
+.cookie-banner__btn {
+  flex-shrink: 0;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--clr-accent);
+  color: var(--clr-text-inv);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: background var(--transition);
+}
+
+.cookie-banner__btn:hover { background: var(--clr-accent-h); }
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@media (max-width: 480px) {
+  .cookie-banner {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+}
