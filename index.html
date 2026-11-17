@@ -17,8 +17,8 @@
     gtag('js', new Date());
     gtag('config', 'G-D0KQ15FVP1');
   </script>
-  <title>Eduardo Santo — Senior Software Developer</title>
-  <meta name="description" content="Eduardo Santo — Senior Software Developer specializing in AI workflows, distributed systems, and cloud architecture. Based in Madrid, Spain." />
+  <title>Eduardo Santo — Senior Software Developer · Full-Stack Agentic Development</title>
+  <meta name="description" content="Eduardo Santo — Senior Software Developer in Madrid building full-stack agentic delivery systems: AI agents that triage, implement, test and ship production code. Golang, Ruby on Rails, Java 21, AWS." />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://eduardohoraciosanto.github.io/ehs-portfolio/" />
@@ -26,8 +26,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://eduardohoraciosanto.github.io/ehs-portfolio/" />
-  <meta property="og:title" content="Eduardo Santo — Senior Software Developer" />
-  <meta property="og:description" content="Senior Software Developer specializing in AI workflows, distributed systems, and cloud architecture. Based in Madrid, Spain." />
+  <meta property="og:title" content="Eduardo Santo — Senior Software Developer · Full-Stack Agentic Development" />
+  <meta property="og:description" content="I build the agentic systems that ship production software — ticket to triage to PR to deploy, with humans on the gates that matter. Based in Madrid, Spain." />
   <meta property="og:image" content="https://eduardohoraciosanto.github.io/ehs-portfolio/assets/og-image.png" />
   <meta property="og:locale" content="en_US" />
 
@@ -44,6 +44,19 @@
     "sameAs": [
       "https://www.linkedin.com/in/eduardohoraciosanto/",
       "https://github.com/eduardohoraciosanto"
+    ],
+    "knowsAbout": [
+      "Agentic Software Development",
+      "AI Agent Orchestration",
+      "Model Context Protocol",
+      "Spec-Driven Development",
+      "Continuous Deployment",
+      "Golang",
+      "Ruby on Rails",
+      "Java",
+      "AWS CDK",
+      "Kubernetes",
+      "Distributed Systems"
     ]
   }
   </script>
@@ -61,6 +74,7 @@
     <div class="nav__inner">
       <a href="#" class="nav__logo">Eduardo Santo</a>
       <ul class="nav__links">
+        <li><a href="#agentic">Agentic</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -79,11 +93,12 @@
     <section class="hero" id="hero">
       <div class="container">
         <div class="hero__content">
-          <p class="hero__eyebrow">Senior Software Developer</p>
+          <p class="hero__eyebrow">Senior Software Developer · Agentic Systems</p>
           <h1 class="hero__name">Eduardo<br/>Santo</h1>
           <p class="hero__tagline">
-            Building high-performance backend systems, distributed architectures, and AI-integrated platforms.
-            Currently at <span class="hero__company">Amazon · Ring</span>.
+            I build the agentic systems that ship production software — ticket to triage to PR to deploy,
+            with humans on the gates that matter. Full stack across backend, micro-frontends and the cloud
+            infrastructure underneath. Currently at <span class="hero__company">Amazon · Ring</span>.
           </p>
           <div class="hero__meta">
             <span class="hero__location">
@@ -116,9 +131,11 @@
               <p><span class="c-green">$</span> whoami</p>
               <p class="c-dim">Eduardo Santo</p>
               <p><span class="c-green">$</span> cat specialties.txt</p>
-              <p class="c-dim">Golang · AWS · Microservices</p>
-              <p class="c-dim">AI Agents · Ruby on Rails · Java</p>
-              <p class="c-dim">IaC · Distributed Systems</p>
+              <p class="c-dim">Agent Orchestration · MCP</p>
+              <p class="c-dim">Golang · Ruby on Rails · Java 21</p>
+              <p class="c-dim">AWS CDK · EKS · Distributed Systems</p>
+              <p><span class="c-green">$</span> agent status</p>
+              <p class="c-dim">triage → groom → implement → <span class="c-green">PR</span></p>
               <p><span class="c-green">$</span> <span class="cursor">_</span></p>
             </div>
           </div>
@@ -129,18 +146,133 @@
     <!-- Stats strip -->
     <section class="stats">
       <div class="container">
-        <div class="stats__grid">
+        <div class="stats__grid stats__grid--four">
           <div class="stats__item">
-            <span class="stats__number">8+</span>
-            <span class="stats__label">Years in Software Engineering</span>
+            <span class="stats__number">167<span class="stats__of">/241</span></span>
+            <span class="stats__label">Tickets with Agent-Written PRs</span>
           </div>
           <div class="stats__item">
-            <span class="stats__number">4+</span>
-            <span class="stats__label">AI Agents Created</span>
+            <span class="stats__number">92<span class="stats__of">%</span></span>
+            <span class="stats__label">Autonomous Ticket &rarr; PR Rate</span>
           </div>
           <div class="stats__item">
-            <span class="stats__number">10+</span>
-            <span class="stats__label">Projects Delivered</span>
+            <span class="stats__number stats__number--text">Full CI/CD</span>
+            <span class="stats__label">Across All Team Services</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">12.1<span class="stats__of">min</span></span>
+            <span class="stats__label">Median Agent Triage Time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agentic Delivery -->
+    <section class="section agentic" id="agentic">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">2026 · Focus</span>
+          <h2 class="section__title">Full-Stack Agentic Development</h2>
+          <p class="section__lede">
+            The industry spent this year adopting AI. I spent it rebuilding how software actually gets
+            delivered: a staged agent system that carries a ticket from creation to a reviewable pull
+            request with no human in the middle — plus the quality gates, rollback paths and human
+            checkpoints that make it safe to run against production.
+          </p>
+        </div>
+
+        <ol class="pipeline">
+
+          <li class="pipeline__stage">
+            <span class="pipeline__index">01</span>
+            <div class="pipeline__body">
+              <h3 class="pipeline__name">Triage</h3>
+              <p class="pipeline__desc">Every new ticket is classified, enriched and annotated the moment it arrives.</p>
+              <span class="pipeline__metric">100% triaged within 13 min</span>
+            </div>
+          </li>
+
+          <li class="pipeline__stage">
+            <span class="pipeline__index">02</span>
+            <div class="pipeline__body">
+              <h3 class="pipeline__name">Grooming</h3>
+              <p class="pipeline__desc">The agent turns a ticket into a spec with acceptance criteria before any code exists.</p>
+              <span class="pipeline__metric">Spec-driven by default</span>
+            </div>
+          </li>
+
+          <li class="pipeline__stage">
+            <span class="pipeline__index">03</span>
+            <div class="pipeline__body">
+              <h3 class="pipeline__name">Implement</h3>
+              <p class="pipeline__desc">A per-codebase trigger dispatches the work to backend, micro-frontend or infrastructure agents.</p>
+              <span class="pipeline__metric">24 of 26 runs ended in a PR</span>
+            </div>
+          </li>
+
+          <li class="pipeline__stage">
+            <span class="pipeline__index">04</span>
+            <div class="pipeline__body">
+              <h3 class="pipeline__name">Review</h3>
+              <p class="pipeline__desc">Owner-driven code review. The agent opens the pull request, a named human owns the decision on it.</p>
+              <span class="pipeline__metric">Human owns the key decisions</span>
+            </div>
+          </li>
+
+          <li class="pipeline__stage">
+            <span class="pipeline__index">05</span>
+            <div class="pipeline__body">
+              <h3 class="pipeline__name">Ship</h3>
+              <p class="pipeline__desc">Full CI/CD across every team service, with alarm-triggered rollback wired into each production workflow.</p>
+              <span class="pipeline__metric">Auto-rollback on alarm</span>
+            </div>
+          </li>
+
+        </ol>
+
+        <div class="callout">
+          <span class="callout__label">Why it was rebuilt</span>
+          <p class="callout__text">
+            The system it replaced ran <strong>126 times in 63 hours and raised zero pull requests</strong>.
+            Every dashboard showed healthy activity. Nothing shipped, so I rebuilt it around the only outcome
+            that counts: features delivered to customers.
+          </p>
+        </div>
+
+        <div class="controls">
+          <h3 class="controls__title">What keeps it trustworthy</h3>
+          <div class="controls__grid">
+
+            <div class="control">
+              <h4 class="control__name">Owner-gated review</h4>
+              <p class="control__desc">A human owns every merge decision. Autonomy stops at the gate, by design.</p>
+            </div>
+
+            <div class="control">
+              <h4 class="control__name">Bar-raiser test gate</h4>
+              <p class="control__desc">A change request stays blocked until logic changes are covered by tests that actually assert something.</p>
+            </div>
+
+            <div class="control">
+              <h4 class="control__name">Automatic rollback</h4>
+              <p class="control__desc">Every pre-production and production workflow rolls back on alarm — proven in forced-failure drills, not assumed.</p>
+            </div>
+
+            <div class="control">
+              <h4 class="control__name">Deploy time windows</h4>
+              <p class="control__desc">Working-hours and holiday windows gate production releases. Lower environments keep shipping on every merge.</p>
+            </div>
+
+            <div class="control">
+              <h4 class="control__name">Self-improving prompts</h4>
+              <p class="control__desc">The system applies its own prompt changes, so each cycle starts from a better baseline than the last.</p>
+            </div>
+
+            <div class="control">
+              <h4 class="control__name">Guards before scale</h4>
+              <p class="control__desc">Bulk operations ship with exclusion rules first — one guard alone held back 4.7K records a re-sync would have wrongly billed.</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -174,20 +306,26 @@
                 </div>
               </div>
               <ul class="timeline__bullets">
-                <li>Spearheaded Spec-Driven-Development, overseeing AI Agents for features and infrastructure, migration and refinement of core Ruby on Rails monolith</li>
-                <li>Engineered 5+ high-performance backend microservices in Golang and Java 21, including device emulation and MCP Server for AI Agent integration</li>
-                <li>Led zero-downtime connectivity migration ensuring 100% service availability for our Billing platform</li>
-                <li>Architected AWS CDK Infrastructure as Code, re-architecting backend services for scalability</li>
-                <li>Key on-call engineer leveraging AWS monitoring tools and Grafana dashboards</li>
-                <li>Elevated code review standards and mentored peers on AI best practices</li>
+                <li>Designed and operate the team's agentic delivery system — triage, grooming, per-codebase implementation and owner-gated review — with 92% of implementor runs ending in a reviewable PR, fully autonomous from ticket creation</li>
+                <li>Built the backend coding agent and its bar-raiser quality gate, which blocks a change request until logic changes carry meaningful RSpec coverage: 167 of 241 tickets delivered a PR authored entirely by the agent</li>
+                <li>Rebuilt on-call support triage as an AI agent that investigates each ticket, writes a triage note and resolves known cases itself — 95% of tickets triaged automatically, 29% resolved without a human, median 12.1 minutes</li>
+                <li>Took release delivery from nine manual approvals to zero, with automatic rollback across every pre-production and production workflow, validated in forced-alarm drills</li>
+                <li>Drove micro-frontend pipelines to full continuous deployment, setting rollback thresholds from 60-day baselines and validating agent-written infrastructure against live diffs</li>
+                <li>Engineered 5+ high-performance backend microservices in Golang and Java 21, including device emulation and an MCP Server for AI Agent integration</li>
+                <li>Led zero-downtime connectivity migration ensuring 100% service availability for our Billing platform; ran EKS AL2023 and Kubernetes upgrades across dev, QA and production on a reusable process</li>
+                <li>Key on-call engineer; redesigned latency alarms that could never practically fire, and mentored peers on agentic development practices</li>
               </ul>
               <div class="timeline__tags">
+                <span class="tag">Agent Orchestration</span>
+                <span class="tag">MCP Server</span>
                 <span class="tag">Golang</span>
                 <span class="tag">Java 21</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">React.JS</span>
                 <span class="tag">Ruby on Rails</span>
                 <span class="tag">AWS CDK</span>
-                <span class="tag">AI Agents</span>
-                <span class="tag">MCP Server</span>
+                <span class="tag">EKS</span>
+                <span class="tag">CI/CD</span>
                 <span class="tag">Grafana</span>
               </div>
             </div>
@@ -280,17 +418,110 @@
           <article class="project-card project-card--featured">
             <div class="project-card__inner">
               <div class="project-card__header">
-                <span class="project-card__category">AI Engineering</span>
+                <span class="project-card__category">Agentic Systems</span>
+                <span class="project-card__year">2026</span>
               </div>
-              <h3 class="project-card__title">Specialized AI Agent Fleet</h3>
+              <h3 class="project-card__title">Agentic Delivery System</h3>
               <p class="project-card__desc">
-                Designed and deployed 4+ purpose-built AI agents — including development agents, integration-test specialists, and review agents — each equipped with 6+ specialized skills. Human-in-the-loop communication was the top-priority skill across all agents, ensuring enhanced quality and oversight throughout automated workflows.
+                A four-stage agent system — triage, grooming, a per-codebase implement trigger, and owner-gated
+                code review — that replaced a schedule which had run 126 times in 63 hours without raising a
+                single pull request. In its first 71 hours every new ticket was triaged within 13 minutes and
+                24 of 26 implementor runs ended in a PR, fully autonomous from ticket creation. I then added
+                self-applying prompt changes so the system improves its own instructions between cycles.
               </p>
               <div class="project-card__tags">
+                <span class="tag">Agent Orchestration</span>
+                <span class="tag">Self-Improving Prompts</span>
+                <span class="tag">Owner-Gated Autonomy</span>
+                <span class="tag">Multi-Repo</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">Agentic Systems</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <h3 class="project-card__title">Autonomous Backend Coding Agent</h3>
+              <p class="project-card__desc">
+                An agent that implements and tests backend changes against team conventions, fronted by a
+                bar-raiser step that blocks the change request until logic changes carry meaningful RSpec
+                tests, and that publishes a Docker test image automatically. 167 of 241 tickets produced a
+                pull request written entirely by the agent.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Ruby on Rails</span>
+                <span class="tag">RSpec</span>
+                <span class="tag">Quality Gates</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">Agentic Systems</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <h3 class="project-card__title">Support Triage Agent</h3>
+              <p class="project-card__desc">
+                Rebuilt a Node-based support bot as an AI agent that investigates each incoming ticket, writes
+                a triage note, and fixes known cases on its own when confidence is high. Over a two-week
+                window it triaged 173 of 182 tickets and resolved 52 itself, in a median of 12.1 minutes —
+                turning on-call from queue-clearing into exception handling.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Node.js</span>
                 <span class="tag">AI Agents</span>
-                <span class="tag">MCP</span>
-                <span class="tag">Human-in-the-Loop</span>
-                <span class="tag">Spec-Driven Dev</span>
+                <span class="tag">On-Call Automation</span>
+                <span class="tag">Confidence Gating</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">Delivery Engineering</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <h3 class="project-card__title">Release Autonomy &amp; Auto-Rollback</h3>
+              <p class="project-card__desc">
+                Took over and closed an 18-story CI/CD plan: releases no longer wait on nine manual approvals,
+                and every pre-production and production workflow now rolls back automatically. I proved the
+                rollback path with forced-alarm drills rather than assuming it, gated deploy days behind
+                working-hours and holiday time windows, and wrote the on-call rollback runbook.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">CI/CD</span>
+                <span class="tag">Auto-Rollback</span>
+                <span class="tag">Time Windows</span>
+                <span class="tag">Runbooks</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__inner">
+              <div class="project-card__header">
+                <span class="project-card__category">Full-Stack Delivery</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <h3 class="project-card__title">Micro-Frontend Continuous Deployment</h3>
+              <p class="project-card__desc">
+                Brought the micro-frontend pipelines to full continuous deployment: rollback thresholds
+                derived from 60-day QA and production baselines, agent-written infrastructure code validated
+                against live infrastructure diffs, and QA-to-production promotion enabled — the frontend half
+                of the same agentic delivery loop.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Micro-Frontends</span>
+                <span class="tag">Continuous Deployment</span>
+                <span class="tag">IaC Review</span>
+                <span class="tag">Observability</span>
               </div>
             </div>
           </article>
@@ -302,7 +533,9 @@
               </div>
               <h3 class="project-card__title">MCP Server for AI Agent Integration</h3>
               <p class="project-card__desc">
-                Designed and implemented a Model Context Protocol (MCP) Server enabling seamless AI Agent integration into Ring's backend infrastructure. Supports Spec-Driven-Development workflows and autonomous feature generation at scale.
+                Designed and implemented a Model Context Protocol (MCP) Server giving AI agents first-class
+                access to backend infrastructure. It is the substrate the delivery agents run on, and what
+                makes spec-driven, autonomous feature work possible at scale.
               </p>
               <div class="project-card__tags">
                 <span class="tag">TypeScript</span>
@@ -316,16 +549,20 @@
           <article class="project-card">
             <div class="project-card__inner">
               <div class="project-card__header">
-                <span class="project-card__category">Infrastructure</span>
+                <span class="project-card__category">Reliability</span>
+                <span class="project-card__year">2026</span>
               </div>
-              <h3 class="project-card__title">Zero-Downtime Connectivity Migration</h3>
+              <h3 class="project-card__title">Alarms That Can Actually Fire</h3>
               <p class="project-card__desc">
-                Led a critical infrastructure migration for our Billing platform's connectivity layer. Achieved 100% service availability throughout the transition — zero operations lost.
+                Demonstrated that six of nine latency alarms could practically never trigger under their
+                50-request floor, and proposed counting slow calls instead. Replayed against two months of
+                production data, the new rule caught two real regional slowdowns with no false alarms.
               </p>
               <div class="project-card__tags">
-                <span class="tag">Ruby on Rails</span>
-                <span class="tag">AWS CDK</span>
-                <span class="tag">Terraform</span>
+                <span class="tag">Alarm Design</span>
+                <span class="tag">Data Replay</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">CloudWatch</span>
               </div>
             </div>
           </article>
@@ -333,17 +570,20 @@
           <article class="project-card">
             <div class="project-card__inner">
               <div class="project-card__header">
-                <span class="project-card__category">Platform Engineering</span>
+                <span class="project-card__category">Incident Forensics</span>
+                <span class="project-card__year">2026</span>
               </div>
-              <h3 class="project-card__title">Online Betting Platform Backend</h3>
+              <h3 class="project-card__title">Duplicate Backfill, Explained</h3>
               <p class="project-card__desc">
-                Architected a proprietary real-time betting platform backend at Pretty Technical — integrated third-party game providers, NATS.IO event streaming, Redis caching, and multi-cloud deployment pipelines.
+                Reproduced and proved why backfill jobs ran in duplicate: bulk enqueue bypassed the uniqueness
+                lock, and jobs outliving the lock's TTL let copies run concurrently. Modelled the throughput
+                limits with Little's Law and handed the team action items that resolved it.
               </p>
               <div class="project-card__tags">
-                <span class="tag">Golang</span>
-                <span class="tag">NATS.IO</span>
-                <span class="tag">Redis</span>
-                <span class="tag">React.JS</span>
+                <span class="tag">Queueing Theory</span>
+                <span class="tag">Sidekiq</span>
+                <span class="tag">Root Cause Analysis</span>
+                <span class="tag">Concurrency</span>
               </div>
             </div>
           </article>
@@ -352,16 +592,22 @@
             <div class="project-card__inner">
               <div class="project-card__header">
                 <span class="project-card__category">Billing Systems</span>
+                <span class="project-card__year">2026</span>
               </div>
-              <h3 class="project-card__title">Subscription Billing Platform</h3>
+              <h3 class="project-card__title">Subscription Billing Safety Nets</h3>
               <p class="project-card__desc">
-                Maintained and evolved the core Ruby on Rails monolith managing subscription lifecycle for Ring across 2+ business verticals and 4+ payment providers — serving millions of active subscribers.
+                Automation with real money attached. A safety net across two payment event processors
+                auto-cancels subscriptions the provider bills but the platform no longer tracks — hundreds
+                caught in production. I also restored opt-out for ~17.7K subscriptions stranded on deprecated
+                auto-overage plans, with a guard that excluded 4.7K lapsed records a re-sync would have
+                wrongly re-billed, and ran the orphaned add-on cleanup that cancelled and refunded the genuine
+                cases out of ~1.1K flagged.
               </p>
               <div class="project-card__tags">
                 <span class="tag">Ruby on Rails</span>
-                <span class="tag">AWS</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">Redis</span>
+                <span class="tag">Payment Processors</span>
+                <span class="tag">Data Migration</span>
+                <span class="tag">Safe Bulk Ops</span>
               </div>
             </div>
           </article>
@@ -389,9 +635,18 @@
 
           <div class="skills__categories">
 
-            <div class="skill-group">
-              <h3 class="skill-group__title">Agentic AI</h3>
+            <div class="skill-group skill-group--lead">
+              <h3 class="skill-group__title">Agentic Development</h3>
               <div class="skill-list">
+                <div class="skill-item">
+                  <span class="skill-item__name">Multi-Stage Agent Orchestration</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Agent Quality Gates &amp; Bar-Raisers</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Self-Improving Prompt Systems</span>
+                </div>
                 <div class="skill-item">
                   <span class="skill-item__name">MCP Server Development</span>
                 </div>
@@ -399,10 +654,10 @@
                   <span class="skill-item__name">Spec-Driven Development</span>
                 </div>
                 <div class="skill-item">
-                  <span class="skill-item__name">AI Agent Design &amp; Orchestration</span>
+                  <span class="skill-item__name">Owner-Gated Autonomy</span>
                 </div>
                 <div class="skill-item">
-                  <span class="skill-item__name">Human-in-the-Loop Workflows</span>
+                  <span class="skill-item__name">Agent Run Observability</span>
                 </div>
                 <div class="skill-item">
                   <span class="skill-item__name">Prompt Engineering</span>
@@ -411,7 +666,7 @@
             </div>
 
             <div class="skill-group">
-              <h3 class="skill-group__title">Programming Languages</h3>
+              <h3 class="skill-group__title">Languages &amp; Frameworks</h3>
               <div class="skill-list">
                 <div class="skill-item">
                   <span class="skill-item__name">Golang</span>
@@ -424,6 +679,9 @@
                 </div>
                 <div class="skill-item">
                   <span class="skill-item__name">JavaScript / TypeScript</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Node.js</span>
                 </div>
                 <div class="skill-item">
                   <span class="skill-item__name">React.JS</span>
@@ -494,6 +752,33 @@
                 <div class="skill-item">
                   <span class="skill-item__name"> Integration/ System / Unit Testing</span>
                 </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Continuous Deployment</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Automated Rollback Strategy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Reliability &amp; Diagnostics</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span class="skill-item__name">Incident Forensics</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Queueing Theory (Little's Law)</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Alarm Design &amp; Tuning</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">Safe Bulk Data Operations</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-item__name">On-Call Runbooks</span>
+                </div>
               </div>
             </div>
 
@@ -504,20 +789,20 @@
             <div class="soft-skills">
               <div class="soft-skill">
                 <div class="soft-skill__icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l1.9 4.7L18.6 9.6l-4.7 1.9L12 16.2l-1.9-4.7L5.4 9.6l4.7-1.9z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
                 </div>
                 <div>
-                  <h4 class="soft-skill__title">Technical Leadership &amp; Mentoring</h4>
-                  <p class="soft-skill__desc">Led multiple engineering teams, hosted Golang bootcamps, and fostered best engineering practices.</p>
+                  <h4 class="soft-skill__title">AI Adoption Leadership</h4>
+                  <p class="soft-skill__desc">Scored the team's repositories, wrote the implementation plan and led the alignment meeting for an AI improvement programme, then delivered 92% of its priority tickets in three days.</p>
                 </div>
               </div>
               <div class="soft-skill">
                 <div class="soft-skill__icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <div>
-                  <h4 class="soft-skill__title">Agile / SCRUM</h4>
-                  <p class="soft-skill__desc">Deep experience facilitating agile ceremonies, sprint planning, and cross-team collaboration.</p>
+                  <h4 class="soft-skill__title">Technical Leadership &amp; Mentoring</h4>
+                  <p class="soft-skill__desc">Led multiple engineering teams, hosted Golang bootcamps, and coach peers on agentic development practices and review standards.</p>
                 </div>
               </div>
               <div class="soft-skill">
@@ -526,7 +811,7 @@
                 </div>
                 <div>
                   <h4 class="soft-skill__title">Communication &amp; Negotiation</h4>
-                  <p class="soft-skill__desc">Effective communication with client dev teams, stakeholders, and cross-functional partners.</p>
+                  <p class="soft-skill__desc">Effective communication with client dev teams, stakeholders, and cross-functional partners; comfortable driving alignment meetings and agile ceremonies.</p>
                 </div>
               </div>
               <div class="soft-skill">
@@ -535,7 +820,7 @@
                 </div>
                 <div>
                   <h4 class="soft-skill__title">Project &amp; Process Management</h4>
-                  <p class="soft-skill__desc">Managed multiple concurrent technical projects, enforcing GitFlow, semantic versioning, and release processes.</p>
+                  <p class="soft-skill__desc">Managed multiple concurrent technical projects and multi-package epics, enforcing GitFlow, semantic versioning, and reusable release processes.</p>
                 </div>
               </div>
             </div>
@@ -567,7 +852,9 @@
             <span class="section__label">Get in touch</span>
             <h2 class="section__title">Let's Work Together</h2>
             <p class="contact__desc">
-              Open to senior and lead engineering roles. Whether you're building a distributed system, scaling infrastructure, or integrating AI — I'd love to hear about your challenge.
+              Open to senior and lead engineering roles. If you're getting agentic development to hold up in
+              production, or scaling the distributed systems and infrastructure underneath it, I'd love to hear
+              about your challenge.
             </p>
             <div class="contact__links">
               <a href="mailto:eduardohoraciosanto@gmail.com" class="contact__link">

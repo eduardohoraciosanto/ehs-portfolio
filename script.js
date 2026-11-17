@@ -35,7 +35,7 @@
 
   // ---- Scroll reveal ----
   const revealEls = document.querySelectorAll(
-    '.timeline__item, .project-card, .skill-group, .soft-skill, .stats__item, .section__header, .contact__text, .cv-card'
+    '.timeline__item, .project-card, .skill-group, .soft-skill, .stats__item, .section__header, .contact__text, .cv-card, .pipeline__stage, .control, .callout'
   );
 
   revealEls.forEach(el => el.classList.add('reveal'));
@@ -100,7 +100,7 @@
   });
 
   // ---- Staggered reveal for grids ----
-  const staggerParents = document.querySelectorAll('.projects__grid, .stats__grid, .skills__categories, .soft-skills');
+  const staggerParents = document.querySelectorAll('.projects__grid, .stats__grid, .skills__categories, .soft-skills, .pipeline, .controls__grid');
 
   staggerParents.forEach(parent => {
     const children = parent.querySelectorAll('.reveal');
