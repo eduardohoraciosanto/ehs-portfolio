@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>CV-EHS</title>
+<style>
+  /* Source for assets/CV-EHS.pdf. Rebuild with cv/build.sh.
+     Geometry mirrors the original Pages document: A4, label column
+     right-aligned at 231.7pt, content column 250pt-505pt, 16pt baseline grid,
+     Avenir Next Bold/Regular. */
+
+  @page { size: A4; margin: 0; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { font-size: 10pt; }
+
+  body {
+    font-family: "Avenir Next", "AvenirNext", Avenir, sans-serif;
+    font-size: 10pt;
+    line-height: 16pt;
+    color: #232323;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 595pt;
+    height: 842pt;
+    padding: 62pt 90pt 24pt 110pt;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* ---- Header ---- */
+  .name {
+    font-weight: 700;
+    font-size: 35pt;
+    line-height: 40pt;
+    letter-spacing: -0.2pt;
+    color: #000;
+    margin-left: 0;
+  }
+  .subtitle {
+    font-weight: 700;
+    font-size: 17pt;
+    line-height: 24pt;
+    color: #606060;
+    margin-bottom: 30pt;
+  }
+
+  /* ---- Section heading: right-aligned to the label column ---- */
+  .section-head {
+    font-weight: 700;
+    font-size: 12pt;
+    line-height: 16pt;
+    color: #000;
+    width: 231.7pt;
+    margin-left: -110pt;
+    text-align: right;
+    white-space: nowrap;
+    margin-top: 15pt;
+    margin-bottom: 18pt;
+  }
+
+  /* ---- Two-column row: grey label + content ---- */
+  .row {
+    display: grid;
+    grid-template-columns: 121.7pt 255pt;
+    column-gap: 18.3pt;
+  }
+  .label {
+    text-align: right;
+    font-weight: 700;
+    font-size: 8.5pt;
+    line-height: 16pt;
+    letter-spacing: 0.3pt;
+    color: #7a7a7a;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .val { font-size: 10pt; line-height: 16pt; }
+  .val a { color: inherit; text-decoration: underline; }
+  .val.b { font-weight: 700; }
+
+  /* ---- Responsibility paragraphs ----
+     The grey label sits on its own line; the text starts one line below it. */
+  .body-block { text-align: justify; margin-top: 16pt; }
+  .body-block.ragged { text-align: left; }
+  .body-block p { margin: 0; }
+  .body-block b { font-weight: 700; }
+
+  .entry-gap { height: 8pt; }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<div class="page">
+
+  <div class="name">Eduardo Santo</div>
+  <div class="subtitle">Sr. Golang Software Developer</div>
+
+  <div class="section-head">Personal Information</div>
+
+  <div class="row"><div class="label">Tel.</div><div class="val">+34 651 725 545</div></div>
+  <div class="row"><div class="label">Email</div><div class="val"><a href="mailto:eduardohoraciosanto@gmail.com">eduardohoraciosanto@gmail.com</a></div></div>
+  <div class="row"><div class="label">Location</div><div class="val">Madrid, Spain</div></div>
+
+  <div class="section-head">Work Experience</div>
+
+  <div class="row"><div class="label">Company</div><div class="val b">Amazon - Ring Brand</div></div>
+  <div class="row"><div class="label">Dates</div><div class="val">February 2022 &ndash; Present</div></div>
+  <div class="row"><div class="label">Role</div><div class="val">Senior Software Development Engineer (SSDE)</div></div>
+  <div class="row">
+    <div class="label">Responsibilities</div>
+    <div class="val body-block">
+      <p><b>Agentic Delivery Systems:</b> Designed and operate the team&rsquo;s agentic
+      delivery system: triage, grooming, per-codebase implementation and owner-gated
+      review. 92% of implementor runs end in a reviewable pull request, autonomous from
+      ticket creation.</p>
+
+      <p><b>Autonomous Coding Agents:</b> Built the backend coding agent and its
+      bar-raiser gate, which blocks a change request until logic changes carry meaningful
+      RSpec coverage. 167 of 241 tickets delivered a fully agent-authored pull
+      request.</p>
+
+      <p><b>AI-Driven On-Call:</b> Rebuilt support triage as an AI agent that
+      investigates each ticket, writes a triage note and resolves known cases itself:
+      95% triaged automatically, 29% resolved with no human, median 12.1 minutes.</p>
+
+      <p><b>Release Autonomy:</b> Took releases from nine manual approvals to zero, with
+      automatic rollback on every pre-production and production workflow, proven in
+      forced-alarm drills. Drove micro-frontends to full continuous deployment.</p>
+
+      <p><b>Software Development:</b> Engineered and deployed 5+ high-performance
+      backend microservices in Golang and Java 21, including device emulation and an MCP
+      Server for AI Agent integration.</p>
+
+      <p><b>Infrastructure &amp; Operations:</b> Led a zero-downtime connectivity
+      migration with 100% service availability, ran operating-system and Kubernetes
+      upgrades across all environments, and architected Infrastructure as Code with AWS
+      CDK. As a key on-call engineer, redesigned latency alarms that could never
+      practically fire.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="page">
+
+  <div class="row"><div class="label">Company</div><div class="val b">Pretty Technical</div></div>
+  <div class="row"><div class="label">Dates</div><div class="val">April 2021 &ndash; February 2022</div></div>
+  <div class="row"><div class="label">Role</div><div class="val">Senior Technical Team Lead</div></div>
+  <div class="row">
+    <div class="label">Responsibilities</div>
+    <div class="val body-block">
+      <p><b>Technical Leadership:</b> Technical Leader for 3 high-stakes projects,
+      including proprietary Online Betting Platforms and real-time sport event
+      systems.</p>
+
+      <p><b>Core Technology:</b> Led development using Golang as the backend language,
+      NATS.IO for messaging, Redis for caching, and Gitlab for CI/CD.</p>
+
+      <p><b>Team Skill Development:</b> Hosted Golang Bootcamps to strengthen backend
+      developers&rsquo; skills, covering Docker basics.</p>
+
+      <p><b>Process:</b> Enforced SCRUM methodology, GITFlow, and conducted technical
+      meetings to negotiate integration impact with client development teams.</p>
+    </div>
+  </div>
+
+  <div class="entry-gap"></div>
+
+  <div class="row"><div class="label">Company</div><div class="val b">Globant Argentina</div></div>
+  <div class="row"><div class="label">Dates</div><div class="val">November 2018 &ndash; April 2021</div></div>
+  <div class="row"><div class="label">Role</div><div class="val">IOT Engineer &amp; Software Developer</div></div>
+  <div class="row">
+    <div class="label">Responsibilities</div>
+    <div class="val body-block">
+      <p><b>Software development:</b> Using Golang and Gitlab CI/CD pipelines with
+      Docker and Docker-compose for development and testing. Managed SQL and No-SQL
+      databases (MySQL, Redis, MongoDB).</p>
+
+      <p><b>Team Skill Development:</b> Led a 3-phase Golang Bootcamp to successfully
+      onboard other developers to the language.</p>
+    </div>
+  </div>
+
+  <div class="section-head">Aptitudes/Competencies</div>
+
+  <div class="row"><div class="label">Languages</div><div class="val b">Native Spanish and Fluent English</div></div>
+  <div class="row">
+    <div class="label">Soft Skills</div>
+    <div class="val body-block ragged">
+      <p><b>AI Adoption Leadership:</b> Scored the team&rsquo;s repositories, wrote the
+      plan and led the alignment meeting for an AI improvement programme, delivering 92%
+      of its priority tickets in three days.</p>
+
+      <p><b>Technical Leadership &amp; Mentoring:</b> Led cross-functional projects,
+      hosted Golang Bootcamps, and mentored peers on agentic development practices and
+      review standards.</p>
+
+      <p><b>Teamwork &amp; Collaboration:</b> Team-oriented mindset, contributing to
+      Agile (SCRUM) ceremonies and prioritizing successful Code Reviews and knowledge
+      sharing.</p>
+
+      <p><b>Communication &amp; Negotiation:</b> Managed daily meetings with clients/POs
+      to define priorities and negotiate technical integration scope and impact.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= PAGE 3 ================= -->
+<div class="page">
+
+  <div class="row">
+    <div class="label">Organizational Skills</div>
+    <div class="val body-block ragged">
+      <p><b>Project Management (Agile):</b> Expertise in SCRUM methodology, including
+      Sprint Refinement, Poker Planning, and successful adherence to project
+      timelines.</p>
+
+      <p><b>Process Management:</b> Strong focus on process enforcement, including
+      adherence to GitFlow, Semantic Versioning releases, and CI/CD pipeline
+      optimization.</p>
+
+      <p><b>Attention to Detail &amp; Reliability:</b> Demonstrated success as a key
+      on-call engineer and in executing large-scale, critical tasks, from a zero-downtime
+      infrastructure migration to bulk corrective operations that carry exclusion rules
+      before they run at scale.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="label">Hard Skills</div>
+    <div class="val body-block ragged">
+      <p><b>Agentic Development:</b> Multi-Stage Agent Orchestration, Agent Quality Gates
+      &amp; Bar-Raisers, Self-Improving Prompt Systems, MCP Server Development,
+      Spec-Driven Development, Owner-Gated Autonomy, Prompt Engineering.</p>
+
+      <p><b>Languages &amp; Frameworks:</b> Golang (Senior), Ruby on Rails, Java 21,
+      Javascript, TypeScript, Node.js, React.JS, C, Python.</p>
+
+      <p><b>Cloud &amp; Architecture:</b> AWS CDK (Infrastructure as Code - IaC),
+      Microservices Design, EKS/Kubernetes, Amazon DynamoDB, AWS Monitoring Tools
+      (CloudWatch), Grafana.</p>
+
+      <p><b>Data &amp; Messaging:</b> NATS.IO, Kafka, Redis, MySQL, MongoDB,
+      SQL/No-SQL.</p>
+
+      <p><b>DevOps &amp; Testing:</b> Docker, CI/CD Pipelines, Continuous Deployment,
+      Automated Rollback, System/Integration Testing, Unit Testing.</p>
+
+      <p><b>Reliability &amp; Diagnostics:</b> Incident Forensics, Queueing Theory
+      (Little&rsquo;s Law), Alarm Design &amp; Tuning, Safe Bulk Data Operations, On-Call
+      Runbooks.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
